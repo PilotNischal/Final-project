@@ -1,0 +1,49 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  input[type='range'] {
+    @apply appearance-none bg-transparent;
+  }
+
+  input[type='range']::-webkit-slider-runnable-track {
+    @apply rounded-full bg-transparent;
+  }
+
+  input[type='range']::-moz-range-track {
+    @apply rounded-full bg-transparent;
+  }
+
+  input[type='range']::-ms-track {
+    @apply rounded-full bg-primary;
+  }
+  input[type='range:']::-webkit-slider-thumb {
+    @apply bg-primary;
+  }
+  input[type='range:']::-moz-range-thumb {
+    @apply bg-primary;
+  }
+  input[type='range:']::-ms-thumb {
+    @apply bg-primary;
+  }
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', Georgia, 'Times New Roman', Times, serif,
+    -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu',
+    'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+}
+body {
+  margin: 0;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
